@@ -38,6 +38,9 @@
         </action>
 
         <action name="ognlAction" class="net.imwork.zhanlong.ognl.OgnlAction">
+            <interceptor-ref name="defaultStack"/>
+            <interceptor-ref name="execAndWait"></interceptor-ref>
+            <result name="wait">wait.jsp</result>
             <result name="success">/ognl.jsp</result>
         </action>
 
